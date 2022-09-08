@@ -10,30 +10,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    margin-top: 20px;
 }
 .text-box h1{
     font-size:128px;
+    font-weight: 300;
 }
 .text-box p{
     margin: 10px 0 40px;
     font-size: 40px;
+    font-weight: 100;
     color: #fff;
 }
 
 @media(max-width: 700px){
     .text-box h1{
         font-size: 60px;
-    }
-    .nav-links ul li{
-        display:block;
-    }
-    .nav-links{
-        position: fixed;
-        height: 100vh;
-        max-width: 700px;
-        min-width: 200px;
-        top: 0;
-        text-align: center;
-        z-index: 2;
     }
 }
