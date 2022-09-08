@@ -30,7 +30,7 @@
     margin: auto;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .h1page2{
     font-size: 64px;
@@ -39,4 +39,7 @@
 .page2text .page2P{
     color:black;
     font-size: 52px;
+}
+.page2list{
+    margin:auto
 }
