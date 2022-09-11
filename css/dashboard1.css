@@ -28,3 +28,17 @@
         font-size: 60px;
     }
 }
+.page2text{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.h1page2{
+    font-size:128px;
+    font-weight:6300
+}
+.page2text .page2P{
+    color:black;
+    font-size: 52px;
+}
