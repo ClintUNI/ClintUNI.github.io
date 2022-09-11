@@ -18,19 +18,24 @@
     font-weight: 100;
     color: #fff;
 }
-
 @media(max-width: 700px){
     .text-box h1{
+        margin-top: 20%;
         font-size: 60px;
     }
+    video{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
 }
-
+video{
+    max-width: 640; 
+    max-height: 360;
+}
 .page2text{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 .h1page2{
     font-size: 80px;
@@ -39,8 +44,4 @@
 .page2text .page2P{
     color:black;
     font-size: 52px;
-}
-.page2list{
-    margin:auto;
-    padding-bottom: 20px;
 }
