@@ -25,12 +25,14 @@
     }
     video{
         width: 100%;
-        aspect-ratio: 16/9;
     }
 }
 video{
     max-width: 640; 
     max-height: 360;
+    height: 360;
+    width: 640;
+    aspect-ratio: 16/9;
 }
 .page2text{
     width: 80%;
