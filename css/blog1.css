@@ -33,3 +33,9 @@
     color:black;
     font-size: 52px;
 }
+.articleimage{
+    max-width: 640; 
+    max-height: 360;
+    height: 360;
+    width: 640;
+}
