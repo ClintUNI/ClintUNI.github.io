@@ -24,6 +24,10 @@
         font-size: 60px;
         margin-top: 20%;
     }
+    .imglarge {
+        width: 100%;
+        height: auto;
+      }
 }
 
 /*--Second Page--*/

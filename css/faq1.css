@@ -31,3 +31,9 @@
     text-align: center;
     padding-top: 70px;
 }
+.card-title{
+    font-size: 32px;
+}
+.card-text{
+    font-size: 25px;
+}
