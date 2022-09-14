@@ -26,6 +26,9 @@
     video{
         width: 100%;
     }
+    .page2list .aboutmeP{
+        font-size: 1em;
+    }
 }
 video{
     max-width: 640; 
@@ -46,4 +49,7 @@ video{
 .page2text .page2P{
     color:black;
     font-size: 52px;
+}
+.page2list .aboutmeP{
+    font-size: 1.5em;
 }
