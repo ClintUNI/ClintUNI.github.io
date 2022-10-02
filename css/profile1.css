@@ -1,3 +1,15 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+footer {
+    margin-top: 1%;
+    display: table-row;
+    height: 0;
+}
+
 .text-box{
     width: 90%;
     color: #fff;
@@ -27,7 +39,7 @@
         width: 100%;
     }
     .page2list .aboutmeP{
-        font-size: 1em;
+        font-size: 018;
     }
 }
 video{
@@ -51,5 +63,5 @@ video{
     font-size: 52px;
 }
 .page2list .aboutmeP{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }

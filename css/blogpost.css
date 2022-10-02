@@ -1,7 +1,18 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+footer {
+    margin-top: 1%;
+    display: table-row;
+    height: 0;
+}
 .blogpost{
     margin-top: 7%;
 }
-p{
+.blogpost p{
     font-size: 24px;
     line-height: 38px;
 }
