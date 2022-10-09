@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <title>Dashboard</title>
+    </head>
+    <body class="text-bg-dark">
+        <div class="container p-2 m-2">
+            <h1>Icecream Shop</h1>
+            <h2 id="AvaFlav">Available Flavors: </h2>
+            <button type="button" class="btn btn-secondary" onclick="addIcecream()">Add ice-cream</button>
+            <button type="button" class="btn btn-secondary" onclick="eatIcecream()">Eat ice-cream</button>
+        </div>
+        <script>
+            const icecream = ["Vanilla", "Strawberry", "Yogurt", "Chocolate", "Fudge"]; //current available flavors.
+            const myCone = []; //myCone array, will be filled by user or eaten from.
+            function addIcecream(){
+                myCone.push(icecream[Math.floor(Math.random() * icecream.length)]); //randomly adds an icecream flavor to myCone from the list of flavors
+                if (myCone.length == 1) console.log("Flavor added to my cone: ");
+                else console.log("Flavors in my cone: ");
+                console.log(myCone);
+            }
+            function eatIcecream(){
+                if (myCone.length){ //if myCone isn't empty, continue.
+                    const eaten = myCone.pop(myCone.length - 1); //-1 makes it start at the end of the list, the end being myCone.length.
+                    console.log("I ate: ");
+                    console.log(eaten);
+                    if (myCone.length >= 1){
+                        console.log("My cone now has: ");
+                        console.log(myCone);
+                    }
+                    if (!myCone.length) console.log("I ran out of icecream.");
+                }else console.log("My icecream didn't get eaten because I ran out.");
+            }
+            document.getElementById("AvaFlav").innerHTML += icecream.join(", ");
+        </script>
+    </body>
+</html>
+
+
+<a class="btn btn-primary" data-toggle="collapse" href="#collapseFAQ1" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <div class="card text-center text-bg-dark border-dark rounded-0 mb-3">
+    <div class="card-body">
+        <h4 class="card-title">How can you print a document from your laptop at HZ?</h4>
+        <hr>
+        <p class="card-text">Head to the linked HZ Print Page > log into your account > upload the files you wish to print > set additional settings, if nescessary > confirm your print request > head to the the printers at HZ, located on each floor
+            > scan your student ID card > choose your printing options > finished.</p>
+        <a href="https://print.hz.nl/login.cfm?dest=index.cfm&" class="btn btn-primary" target="_blank">HZ Print Page(s)</a>
+    </div>
+  </div>
+  <div class="card text-center text-bg-dark border-dark rounded-0 mb-3">
+    <div class="card-body">
+        <h4 class="card-title">How can you scan a document and send it to your laptop at HZ?</h4>
+        <hr>
+        <p class="card-text">The instructions are located on the linked page below.</p>
+        <a href="https://hzuniversity.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=d065a4e8a56d47dcbd0ffb9cdf78f20b&origin=searchPreview" class="btn btn-primary" target="_blank">HZ Scan Files</a>
+    </div>
+  </div>
+  <div class="card text-center text-bg-dark border-dark rounded-0 mb-3">
+    <div class="card-body">
+        <h4 class="card-title">How can I buy something (like when I sign up for the IT introduction event at Friday 16/09) on the HZ web shop?</h4>
+        <hr>
+        <p class="card-text">Head to the linked HZ Webshop page > log in > select what to purchase or enrol for.</p>
+        <a href="https://webshop.hz.nl/" class="btn btn-primary" target="_blank">HZ Webshop</a>
+    </div>
+  </div>
+  <div class="card text-center text-bg-dark border-dark rounded-0 mb-3">
+    <div class="card-body">
+        <h4 class="card-title">Where can I find the latest instructions on what to do when you are sick / show symptoms of COVID?</h4>
+        <hr>
+        <p class="card-text">The instructions are located on the linked page below.</p>
+        <a href="https://hz.nl/en/current-affairs/coronavirus" class="btn btn-primary" target="_blank">HZ Covid</a>
+    </div>
+  </div>
+  <div class="card text-center text-bg-dark border-dark rounded-0 mb-3">
+    <div class="card-body">
+        <h4 class="card-title">How can you book a project space in one of the wings?</h4>
+        <hr>
+        <p class="card-text">Head to the linked HZ SelfService Portal, then make a reservation > reserve meeting room or project group room > reserve a room > select an available time > approve it.</p>
+        <a href="https://hzuniversity.topdesk.net/tas/public/ssp/" class="btn btn-primary" target="_blank">HZ SelfService Portal</a>
+    </div>
+  </div>
+  <div class="card text-center text-bg-dark border-dark rounded-0 mb-3">
+    <div class="card-body">
+        <h4 class="card-title">What are the instructions if you want to park your car at the HZ parking lot?</h4>
+        <hr>
+        <p class="card-text">Free parking is possible on the car park of PZEM at the Poelendaelesingel 10 in Middelburg. Reveal your HZ pass at the barrier > enter the parking lot > park the car.</p>
+        <a href="#" class="btn btn-primary disabled" id="btndisabled"><s>HZ Parking</s></a>
+    </div>
+  </div>

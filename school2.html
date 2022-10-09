@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <title>Dashboard</title>
+    </head>
+    <body class="text-bg-dark">
+        <div class="container p-2 m-2">
+            <h1>Restaurant</h1>
+            <h2 id="AvaFlav">People walking around: </h2>
+            <button type="button" class="btn btn-secondary" onclick="addQueue()">Add people to queue</button>
+            <button type="button" class="btn btn-secondary" onclick="serveQueue()">Serve people in queue</button>
+        </div>
+        <script>
+            const people = ["Fed", "Cris", "Owen", "Mateo", "Sir Meow", "Steven", "Core", "Car", "Boom"];
+            const myQueue = [];
+            function addQueue(){
+                const addPeopleToQueue = people[Math.floor(Math.random() * people.length)];
+                myQueue.push(addPeopleToQueue); //randomly adds a person to the queue
+                if (myQueue.length == 1) console.log("A person was added to the queue: ");
+                else console.log("People in the queue: ");
+                console.log(myQueue);
+            }
+            function serveQueue(){
+                if (myQueue.length){ //if myQueue isn't empty, continue.
+                    const served = myQueue.shift();
+                    console.log("You served: ");
+                    console.log(served);
+                    if (!myQueue.length){
+                        console.log("The queue is empty.");
+                    }else{
+                        console.log("People left in queue: ");
+                        console.log(myQueue);
+                    }
+                }else console.log("There is no one to serve because the queue is empty.");
+            }
+            document.getElementById("AvaFlav").innerHTML += people.join(", ");
+        </script>
+    </body>
+</html>
