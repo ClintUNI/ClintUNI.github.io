@@ -1,148 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="css/blogpost.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-      <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <!--Core content panel, copied on all pages-->
-  <!--Move to css file-->
-      <style>
-        *{
-           margin: 0;
-          padding: 0;
-          font-family: 'Quicksand', sans-serif;
-        }
-        body{
-          min-height: 100vh;
-          width: 100%;
-          background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.png);
-          background-position: center;
-          background-size: cover;
-        }
-      </style>
 
-      <title>Blog Post</title>
-  </head>
-    <body>
-      <header>
-        <div class="container">
-          <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="/images/HZlogo.png" alt="HZ Logo" width="30" height="24">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                 </li>
-                  <li class="nav-item">
-                     <a class="nav-link" aria-current="page" href="profile.html">Profile</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/blogpost.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background.png);
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+  <title>Blog Post</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/HZlogo.png" alt="HZ Logo" width="30" height="24">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Resources</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item"
+                      href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+                      target="_blank">
+                      <b>Course Regulations</b></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
+                  <li><a class="dropdown-item"
+                      href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
+                      target="_blank">
+                      <b>Implementation Regulations</b></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="faq.html">FAQ</a>
+                  <li><a class="dropdown-item"
+                      href="https://teams.microsoft.com/l/channel/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/General?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"
+                      target="_blank">
+                      <b>Microsoft Teams</b></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                  <li><a class="dropdown-item" href="https://learn.hz.nl/my/" target="_blank">
+                      <b>Learn HZ</b></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
                   </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Resources</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf" target="_blank">
-                          <b>Course Regulations</b></a></li>
-                        <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">
-                          <b>Implementation Regulations</b></a></li>
-                        <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="https://teams.microsoft.com/l/channel/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/General?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank">
-                          <b>Microsoft Teams</b></a></li>
-                        <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="https://learn.hz.nl/my/" target="_blank">
-                          <b>Learn HZ</b></a></li>
-                        <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="https://github.com/HZ-HBO-ICT" target="_blank">
-                          <b>HBO-ICT Github</b></a></li>
-                        <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="https://hz.osiris-student.nl" target="_blank">
-                          <b>Study Progress</b></a></li>
-                    </ul>
+                  <li><a class="dropdown-item" href="https://github.com/HZ-HBO-ICT" target="_blank">
+                      <b>HBO-ICT Github</b></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
                   </li>
+                  <li><a class="dropdown-item" href="https://hz.osiris-student.nl" target="_blank">
+                      <b>Study Progress</b></a></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-        <section class="blogpost">
-          <div class="container">
-              <div class="row text-bg-dark">
-                <div class="col p-2 m-0">
-                  <div class="content-title text-bg- text-center p-2">
-                      <h4>Profession</h4>
-                      <meta name="description" content="Brief feedback on my Who Am I? upload as well as my thoughts on said feedback.">
-                      <hr>
-                  </div>
-                  <div class="content-main p-3">
-                    <img class="img-thumbnail float-end text-bg-dark articleimage mb-4 mt-2 ms-3 me-2" width="420" height="auto" src="images/Valve-logo.png" alt="Responsive image">
-                    <article>
-                      <p><b>Valve Softwares</b><br>
-                        Valve Softwares is a company that produces, handles, sells, and controls Video Games, software, and hardware. Most notably, STEAM, an e-commerce platform dedicated to the sale of Video Games and related goods.<br><br>
-                        <b>Core Business</b>: Sale and production of Video Games, Game Engines, software, and hardware.<br>
-                        <b>IT Roles</b>: Frontend, Backend, software, hardware, security/safety, cloud, data, systems, engine.<br>
-                        <b>Tech</b>: Lua, C++ and HTML5<br>
-                        <b>Work Culture</b>: "Democratic" No traditional hierarchy. Multinational. The most fun work culture.<br>
-                        <b>I like the most about this job offer</b>: The work culture.
-                      </p>
-                        <hr>
-                    <img class="img-thumbnail float-end text-bg-dark articleimage mb-4 mt-2 ms-3 me-2" width="420" height="auto" src="images/riot-logo.png" alt="Responsive image">
-                      <p><b>Riot Games</b><br>
-                        Riot Games is a company that produces, handles, and sells video games internationally. Most notably, Valorant and League of Legends, two of the largest eSports games on the planet currently.<br><br>
-                        <b>Core Business</b>: Sale and production of Video Games.<br>
-                        <b>IT Roles</b>: Frontend, Backend, game development, game client, anti-cheat, data, cloud.<br>
-                        <b>Tech</b>: Java, Go, C++, C#, Python, Ruby and HTML5<br>
-                        <b>Work Culture</b>: One of the highest rated by its employees. Multinational.<br>
-                        <b>I like the most about this job offer</b>: Their love for video games.
-                      </p>
-                      <hr>
-                      <img class="img-thumbnail float-end text-bg-dark articleimage mb-4 mt-2 ms-3 me-2" width="420" height="auto" src="images/discord-logo.png" alt="Responsive image">
-                        <p><b>Discord</b><br>
-                            Discord is a company that produces one of the world most leading communications software.<br><br>
-                            <b>Core Business</b>: Production of communications technology.<br>
-                            <b>IT Roles</b>: Frontend, Backend, game development, user client, data, cloud.<br>
-                            <b>Tech</b>: JavaScript, Java, Go, Rust, Elixir, C++, Python, Ruby and HTML5<br>
-                            <b>Work Culture</b>: Small teams of experts. Co-worker friendships are promoted. Multinational.<br>
-                            <b>I like the most about this job offer</b>: Their autonomy in the work environment.
-                        </p>
-                    </article>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </section>
-       <script src="bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    </body>
-    <footer class="text-bg-dark">
-      <section class="ending m-0 p-0">
-        <div class="text-start">
-          <hr>
-          <div class="m-0 ps-4 pe-4">
-            <h6>School Project</h6>
-            <p>By Clint R. E || Content used is for educational purposes only. || 2022</p>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </div>
+  </header>
+  <section class="blogpost">
+    <div class="container mb-4">
+      <div class="row text-bg-dark">
+        <div class="col p-2 m-0">
+          <div class="content-title text-bg- text-center p-2">
+            <h4>Profession</h4>
+            <meta name="description"
+              content="Brief feedback on my Who Am I? upload as well as my thoughts on said feedback.">
+            <hr>
+          </div>
+          <div class="content-main p-3">
+            <img class="img-thumbnail float-end text-bg-dark articleimage mb-4 mt-2 ms-3 me-2" width="420" height="auto"
+              src="images/Valve-logo.png" alt="Valve logo">
+            <article>
+              <p id="valveSoft"><b>Valve Softwares</b><br>
+                Valve Softwares is a company that produces, handles, sells, and controls Video Games, software, and
+                hardware. Most notably, STEAM, an e-commerce platform dedicated to the sale of Video Games and related
+                goods.<br><br>
+                <b>Core Business</b>: Sale and production of Video Games, Game Engines, software, and hardware.<br>
+                <b>IT Roles</b>: Frontend, Backend, software, hardware, security/safety, cloud, data, systems,
+                engine.<br>
+                <b>Tech</b>: Lua, C++ and HTML5<br>
+                <b>Work Culture</b>: "Democratic" No traditional hierarchy. Multinational. The most fun work
+                culture.<br>
+                <b>I like the most about this job offer</b>: The work culture.
+              </p>
+              <hr>
+              <img class="img-thumbnail float-end text-bg-dark articleimage mb-4 mt-2 ms-3 me-2" width="420"
+                height="auto" src="images/riot-logo.png" alt="Riot logo">
+              <p id="riotGames"><b>Riot Games</b><br>
+                Riot Games is a company that produces, handles, and sells video games internationally. Most notably,
+                Valorant and League of Legends are two of the largest eSports games on the planet currently.<br><br>
+                <b>Core Business</b>: Sale and production of Video Games.<br>
+                <b>IT Roles</b>: Frontend, Backend, game development, game client, anti-cheat, data, cloud.<br>
+                <b>Tech</b>: Java, Go, C++, C#, Python, Ruby and HTML5<br>
+                <b>Work Culture</b>: One of the highest rated by its employees. Multinational.<br>
+                <b>I like the most about this job offer</b>: Their love for video games.
+              </p>
+              <hr>
+              <img class="img-thumbnail float-end text-bg-dark articleimage mb-4 mt-2 ms-3 me-2" width="420"
+                height="auto" src="images/discord-logo.png" alt="Discord logo">
+              <p id="discordText"><b>Discord</b><br>
+                Discord is a company that produces one of the world's leading communications software.<br><br>
+                <b>Core Business</b>: Production of communications technology.<br>
+                <b>IT Roles</b>: Frontend, Backend, game development, user client, data, cloud.<br>
+                <b>Tech</b>: JavaScript, Java, Go, Rust, Elixir, C++, Python, Ruby and HTML5<br>
+                <b>Work Culture</b>: Small teams of experts. Co-worker friendships are promoted. Multinational.<br>
+                <b>I like the most about this job offer</b>: Their autonomy in the work environment.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-bg-dark">
+    <section class="ending m-0 p-0">
+      <div class="text-start">
         <hr>
-      </section>
-    </footer>
+        <div class="m-0 ps-4 pe-4">
+          <h6>School Project</h6>
+          <p>By Clint R. E || Content used is for educational purposes only. || 2022</p>
+        </div>
+      </div>
+      <hr>
+    </section>
+  </footer>
+  <script src="bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
